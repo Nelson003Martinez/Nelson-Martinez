@@ -1,0 +1,217 @@
+:root {
+    --colorPrimario: #E23636;
+    --colorSecundario: #518CCA;
+    --colorFondo: #f4f4f4;
+    --colorTarjeta: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--colorFondo);
+    
+}
+
+header {
+    background-color: var(--colorPrimario);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header nav {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+main {
+    margin-top: 162px;
+}
+
+main h1 {
+    margin: 62px 0 0 0;
+    text-align: center;
+    color: #E23636;
+    font-family: Avengeance;
+    font-size: 64px;
+}
+
+.tarjetaIntroduccion {
+    width: 1000px;
+    height: 304px;
+    background-color: var(--colorTarjeta);
+    margin: 62px auto 25px auto;
+    padding: 30px;
+    display: flex;
+    gap: 23px;
+    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.tarjetaIntroduccion .tarjetaIntroduccion-contenido h2 {
+    color: var(--colorPrimario);
+    font-size: 32px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.tarjetaIntroduccion .tarjetaIntroduccion-contenido hr {
+    background-color: var(--colorPrimario);
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.tarjetaIntroduccion .tarjetaIntroduccion-contenido p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.tarjetaIntroduccion .tarjetaIntroduccion-imagenes img {
+    width: 240px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.tarjetaHistoria {
+    width: 1000px;
+    background-color: var(--colorTarjeta);
+    margin: 25px auto;
+    padding: 30px;
+    display: flex;
+    gap: 23px;
+    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.tarjetaHistoria h2 {
+    color: var(--colorPrimario);
+    font-size: 32px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.tarjetaHistoria hr {
+    background-color: var(--colorPrimario);
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.tarjetaHistoria .tarjetaHistoria-contenido {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.tarjetaHistoria .tarjetaHistoria-contenido h3 {
+    font-size: 32px;
+    color: var(--colorSecundario);
+    font-weight: lighter;
+}
+
+.tarjetaHistoria .tarjetaHistoria-contenido p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.tarjetaHistoria .tarjetaHistoria-contenido .cajas {
+    columns: 2;
+    margin-top: 12px;
+}
+
+.tarjetaHistoria .tarjetaHistoria-contenido .cajas .cajita {
+    background-color: var(--colorTarjeta);
+    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tarjetaHistoria .tarjetaHistoria-imagenes {
+    width: 240px;
+    margin-top: 50px;
+}
+
+.tarjetaHistoria .tarjetaHistoria-imagenes img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.tarjetaUnionHeroes, .tarjetaCambioGrupo {
+    width: 1000px;
+    background-color: var(--colorTarjeta);
+    margin: 25px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 5px 4px 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.tarjetaUnionHeroes h2, .tarjetaCambioGrupo h2 {
+    color: var(--colorPrimario);
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.tarjetaUnionHeroes hr, .tarjetaCambioGrupo hr {
+    background-color: var(--colorPrimario);
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    margin: 8px 0 12px;
+    width: 100%;
+}
+
+.tarjetaUnionHeroes p, .tarjetaCambioGrupo p {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.tarjetaUnionHeroes .tarjetaUnionHeroes-imagen img,
+.tarjetaCambioGrupo .tarjetaCambioGrupo-imagen img {
+    width: 240px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: var(--colorSecundario);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+footer h2 {
+    font-size: 24px;
+    font-family: 'Avengeance', sans-serif;
+    color: white;
+}
